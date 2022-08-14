@@ -1,0 +1,1 @@
+import{o as e,c as n,t as r,n as s}from"./app.a35cdf6d.js";const l={__name:"BadgeOnayDurum",props:{durum:String},setup(a){return(u,t)=>(e(),n("span",{class:s(["badge badge-pill",{"bg-success":a.durum==="Onayland\u0131","bg-red":a.durum==="Silinmi\u015F"}])},r(a.durum),3))}};export{l as default};
