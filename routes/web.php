@@ -19,6 +19,7 @@ Route::group(['middleware' => 'auth'],function (){
     Route::get('invoice/{ettn}/html',[App\Http\Controllers\eArsiv\eArsivController::class,'getHTML'])
         ->name('invoice.html');
 
-    Route::resource('invoice',App\Http\Controllers\eArsiv\eArsivController::class);
+    Route::resource('invoice-sale',App\Http\Controllers\eArsiv\Sale\eArsivPurchaseController::class);
+    Route::resource('invoice-purchase',App\Http\Controllers\eArsiv\Purchase\eArsivPurchaseController::class);
 
 });
